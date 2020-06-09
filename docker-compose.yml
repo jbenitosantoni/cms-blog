@@ -1,0 +1,11 @@
+version: "3"
+services:
+  webserver:
+    image: php-environment
+    environment:
+      - APACHE_RUN_USER=#501
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+

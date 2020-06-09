@@ -1,0 +1,19 @@
+{
+  "name": "vendor_name/ProyectoIntermedioBootcamp",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "javierbenitosantoni",
+      "email": "javier@javierbenito.me"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Blog\\": "src/"
+    }
+  }
+}
