@@ -1,4 +1,6 @@
 <?php
+require_once '../vendor/autoload.php';
+
 session_start();
 
 if ( isset( $_SESSION['login_email'] ) ) {
@@ -26,8 +28,7 @@ if ( isset( $_SESSION['login_email'] ) ) {
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <meta name="theme-color" content="#563d7c">
-
-
+    <script src="js/Admin.js"></script>
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -56,7 +57,7 @@ if ( isset( $_SESSION['login_email'] ) ) {
     <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-            <a class="nav-link" href="logout.php">Sign out</a>
+            <a class="nav-link" href="src/logout.php">Sign out</a>
         </li>
     </ul>
 </nav>
@@ -73,19 +74,19 @@ if ( isset( $_SESSION['login_email'] ) ) {
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" onclick="generarPosts()">
                             <span data-feather="layers"></span>
                             Posts
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" onclick="generarComments()">
                             <span data-feather="file-text"></span>
                             Comments
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" onclick="generarUsers()">
                             <span data-feather="users"></span>
                             Users
                         </a>
@@ -95,54 +96,14 @@ if ( isset( $_SESSION['login_email'] ) ) {
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-                <h1 class="h2"><br>Dashboard</h1>
+                <h1 class="h2" id="titleSection"><br>Dashboard</h1>
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Header</th>
-                            <th>Header</th>
-                            <th>Header</th>
-                            <th>Header</th>
+                        <tr id="head">
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>1,001</td>
-                            <td>Lorem</td>
-                            <td>ipsum</td>
-                            <td>dolor</td>
-                            <td>sit</td>
-                        </tr>
-                        <tr>
-                            <td>1,002</td>
-                            <td>amet</td>
-                            <td>consectetur</td>
-                            <td>adipiscing</td>
-                            <td>elit</td>
-                        </tr>
-                        <tr>
-                            <td>1,003</td>
-                            <td>Integer</td>
-                            <td>nec</td>
-                            <td>odio</td>
-                            <td>Praesent</td>
-                        </tr>
-                        <tr>
-                            <td>1,003</td>
-                            <td>libero</td>
-                            <td>Sed</td>
-                            <td>cursus</td>
-                            <td>ante</td>
-                        </tr>
-                        <tr>
-                            <td>1,004</td>
-                            <td>dapibus</td>
-                            <td>diam</td>
-                            <td>Sed</td>
-                            <td>nisi</td>
-                        </tr>
+                        <tbody id="tBody">
                         </tbody>
                     </table>
             </div>
@@ -152,6 +113,9 @@ if ( isset( $_SESSION['login_email'] ) ) {
     </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/https://getbootstrap.com/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-<script src="../js/dashboard.js"></script></body>
+<script src="js/dashboard.js"></script>
+<?php
+include_once 'src/script.php';
+?>
+</body>
 </html>

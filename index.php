@@ -4,8 +4,6 @@ use Blog\Comment;
 
 require_once 'vendor/autoload.php';
 
-$posts = new \Blog\Post();
-
 require_once 'resources/header.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

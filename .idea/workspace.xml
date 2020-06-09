@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="612732de-dabf-4ec7-97c1-aa49ce1edef5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="MAMP-server">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1d3QPvES83D2VICDnflNBcK9t2Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="sqlGeneratorConfig" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/js" />
+      <recent name="$PROJECT_DIR$/admin/src" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/css" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="612732de-dabf-4ec7-97c1-aa49ce1edef5" name="Default Changelist" comment="" />
+      <created>1591651275923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591651275923</updated>
+      <workItem from="1591651277612" duration="3006000" />
+      <workItem from="1591688583112" duration="13935000" />
+      <workItem from="1591707396618" duration="12149000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2640" y="165" key="#PHP" timestamp="1591688421071">
+      <screen x="1680" y="-66" width="2560" height="1346" />
+    </state>
+    <state x="2640" y="165" key="#PHP/0.23.1680.1027/1680.-66.2560.1346@1680.-66.2560.1346" timestamp="1591688421071" />
+    <state x="2309" y="438" key="#SQL_Dialects" timestamp="1591688683472">
+      <screen x="1680" y="-66" width="2560" height="1346" />
+    </state>
+    <state x="2309" y="438" key="#SQL_Dialects/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591688683472" />
+    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591651558092">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.963@0.23.1680.963" timestamp="1591651558092" />
+    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser" timestamp="1591713522490">
+      <screen x="1680" y="-66" width="2560" height="1346" />
+    </state>
+    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591713522490" />
+    <state x="2662" y="324" key="NewPhpClassDialog" timestamp="1591715126322">
+      <screen x="1680" y="-66" width="2560" height="1346" />
+    </state>
+    <state x="2662" y="324" key="NewPhpClassDialog/0.23.1680.1027/1680.-66.2560.1346@1680.-66.2560.1346" timestamp="1591687978222" />
+    <state x="2662" y="324" key="NewPhpClassDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591715126322" />
+    <state x="2779" y="533" key="NewPhpFileDialog" timestamp="1591713558647">
+      <screen x="1680" y="-66" width="2560" height="1346" />
+    </state>
+    <state x="2779" y="533" key="NewPhpFileDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591713558647" />
+    <state x="2514" y="330" key="SettingsEditor" timestamp="1591707439464">
+      <screen x="1680" y="-66" width="2560" height="1346" />
+    </state>
+    <state x="2514" y="330" key="SettingsEditor/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591707439464" />
+    <state x="722" y="391" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1591656725223">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state x="722" y="391" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.1680.963@0.23.1680.963" timestamp="1591656725223" />
+    <state x="704" y="400" width="341" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591656736801">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state x="704" y="400" width="341" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.963@0.23.1680.963" timestamp="1591656736801" />
+    <state x="405" y="167" key="com.intellij.database.dbimport.ImportDialog" timestamp="1591656975063">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state x="405" y="167" key="com.intellij.database.dbimport.ImportDialog/0.23.1680.963@0.23.1680.963" timestamp="1591656975063" />
+    <state x="555" y="317" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1591656973065">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state x="555" y="317" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1680.963@0.23.1680.963" timestamp="1591656973065" />
+    <state x="2807" y="631" width="1048" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1591710661778">
+      <screen x="1680" y="-66" width="2560" height="1346" />
+    </state>
+    <state x="825" y="180" width="693" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.963@0.23.1680.963" timestamp="1591657291532" />
+    <state x="825" y="180" width="691" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.965@0.23.1680.965" timestamp="1591657751398" />
+    <state x="2807" y="631" width="1048" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591710661778" />
+    <state x="2625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1591715648479">
+      <screen x="1680" y="-66" width="2560" height="1417" />
+    </state>
+    <state x="2625" y="241" width="670" height="676" key="search.everywhere.popup/1680.-66.2560.1417/0.23.1680.965@1680.-66.2560.1417" timestamp="1591715648479" />
+  </component>
+</project>

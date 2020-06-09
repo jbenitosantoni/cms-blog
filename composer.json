@@ -13,7 +13,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Blog\\": "src/"
+      "Blog\\": "src/",
+      "Admin\\": "admin/src/"
     }
   }
 }

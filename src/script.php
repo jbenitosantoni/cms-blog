@@ -1,5 +1,4 @@
 <?php
-
 namespace Blog;
 
 $post = new Post();
@@ -17,6 +16,7 @@ for ($i = 0; $i < count($arrayPosts); $i++) {
     }
 }
 ?>
+
 <script type="text/javascript">
     let posts = <?php echo json_encode($arrayPosts) ?>;
     let users = <?php echo json_encode($users) ?>;
@@ -35,4 +35,3 @@ for ($i = 0; $i < count($arrayPosts); $i++) {
         window.history.replaceState( null, null, window.location.href );
     }
 </script>
-

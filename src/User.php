@@ -18,6 +18,6 @@ class User
     function userPost() {
         $inicializacion = new Database();
         $inicializacion = $inicializacion->connect();
-        return $inicializacion->query("SELECT * FROM users")->fetchAll();
+        return $inicializacion->query("SELECT idUser, name FROM users")->fetchAll();
     }
 }
