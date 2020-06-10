@@ -71,22 +71,6 @@ class Post {
     }
 }
 
-class Comentario {
-    idComentario;
-    idPost;
-    titulo;
-    contenido;
-    autor;
-
-    constructor(idComentario, idPost, titulo, contenido, autor) {
-        this.idComentario = idComentario;
-        this.idPost = idPost;
-        this.titulo = titulo;
-        this.contenido = contenido;
-        this.autor = autor;
-    }
-}
-
 class createDOM extends Post {
 
 

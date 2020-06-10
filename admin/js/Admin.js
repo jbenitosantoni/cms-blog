@@ -83,24 +83,14 @@ class DomPost {
 }
 
 class DomComment {
-    idComentario;
-    idPost;
-    titulo;
-    contenido;
-    autor;
 
-    constructor(idComentario, idPost, titulo, contenido, autor) {
-        this.idComentario = idComentario;
-        this.idPost = idPost;
-        this.titulo = titulo;
-        this.contenido = contenido;
-        this.autor = autor;
-    }
     domCommentsHead() {
-        let titleSection, tr, thAuthor, thContent, thApproved, thidPost, thTitlePost;
+        let titleSection, tr, thIdComentario, thAuthor, thContent, thApproved, thidPost, thTitlePost;
         titleSection = document.getElementById("titleSection");
         titleSection.innerHTML = "<br>Comentarios";
         tr = document.getElementById("head");
+        thIdComentario = document.createElement("th");
+        thIdComentario.innerHTML = "ID Comentario";
         thAuthor = document.createElement("th");
         thAuthor.innerHTML = "Titulo";
         thContent = document.createElement("th");
@@ -111,11 +101,40 @@ class DomComment {
         thidPost.innerHTML = "ID Post";
         thTitlePost = document.createElement("th");
         thTitlePost.innerHTML = "Titulo Post";
-        tr.appendChild(thAuthor);
-        tr.appendChild(thContent);
-        tr.appendChild(thApproved);
-        tr.appendChild(thidPost);
+        tr.appendChild(thIdComentario);
         tr.appendChild(thTitlePost);
+        tr.appendChild(thContent);
+        tr.appendChild(thAuthor);
+        tr.appendChild(thTitlePost);
+        tr.appendChild(thidPost);
+        tr.appendChild(thApproved);
+    }
+    domCommentDraw(idComentario, titulo, contenido, autor, tituloPost, idPost, aprobado) {
+        let tbody, tr, tdIDComentario, tdTitulo, tdContenido, tdAutor, tdTituloPost, tdIdPost, tdAprobado;
+        tbody = document.getElementById("tBody");
+        tr = document.createElement("tr");
+        tdIDComentario = document.createElement("td");
+        tdIDComentario.innerHTML = idComentario;
+        tdTitulo = document.createElement("td");
+        tdTitulo.innerHTML = titulo;
+        tdContenido = document.createElement("td");
+        tdContenido.innerHTML = contenido;
+        tdAutor = document.createElement("td");
+        tdAutor.innerHTML = autor;
+        tdTituloPost = document.createElement("td");
+        tdTituloPost.innerHTML = tituloPost;
+        tdIdPost = document.createElement("td");
+        tdIdPost.innerHTML = idPost;
+        tdAprobado = document.createElement("td");
+        tdAprobado.innerHTML = aprobado;
+        tbody.appendChild(tr);
+        tr.appendChild(tdIDComentario);
+        tr.appendChild(tdTitulo);
+        tr.appendChild(tdContenido);
+        tr.appendChild(tdAutor);
+        tr.appendChild(tdTituloPost);
+        tr.appendChild(tdIdPost);
+        tr.appendChild(tdAprobado);
     }
 }
 
