@@ -1,14 +1,22 @@
 <?php
-
 use Blog\Comment;
 use Blog\Post;
 
+session_start();
+if ( isset( $_SESSION['login_email'] ) ) {
+    $now = time(); // Checking the time now when home page starts.
+    if ($now > $_SESSION['expire']) {
+        session_destroy();
+        echo "Your session has expired! <a href='../login.php'>Login here</a>";
+    }
+} else {
+    // Redirect them to the login page
+    header("Location: ../login.php");
+}
 $posts = new Post();
 $posts = $posts->getPosts();
 $comments = new Comment();
 $comments = $comments->getAllComments();
-$posts = new Post();
-$posts = $posts->getPosts();
 for ($i = 0; $i < count($comments); $i++){
     for ($j = 0; $j < count($posts); $j++) {
         if ($posts[$j][0] == $comments[$i][5]) {

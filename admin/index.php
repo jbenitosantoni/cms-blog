@@ -1,6 +1,7 @@
 <?php
 
 use Blog\Comment;
+use Blog\Post;
 
 require_once '../vendor/autoload.php';
 session_start();
@@ -122,11 +123,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['idComment'])) {
         $comment = new Comment();
         $comment->approveComment($_POST['idComment']);
-        echo "<script>generarComments()</script>";
+        echo "<script>
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
+generarComments();
+</script>";
     }
     if (isset($_POST['idpost'])){
     $posts = new Post();
     $posts = $posts->editPost($_POST['idpost'], $_POST['inputtitulo'], $_POST['inputimagen'], $_POST['inputresumen'], $_POST['inputcontenido'], $_POST['inputautor'], $_POST['inputdestacado'] , $_POST['inputcategoria'], $_POST['inputlinkpost'] , $_POST['inputfecha']);
+        echo "<script>
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
+generarPosts()</script>";
     }
 }
 ?>

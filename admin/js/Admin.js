@@ -158,11 +158,9 @@ class DomPost {
         h5categoria.innerHTML = "Categoria:";
         h5linkPost.innerHTML = "Link Post:";
         h5fecha.innerHTML = "Fecha:";
-        divSeparar = document.createElement("div");
         submitForm = document.createElement("input");
         submitForm.setAttribute("type", "submit");
         submitForm.setAttribute("value", "Editar");
-        divSeparar.appendChild(submitForm);
         form.appendChild(h5titulo);
         form.appendChild(inputtitulo);
         form.appendChild(h5imagen);
@@ -183,7 +181,8 @@ class DomPost {
         form.appendChild(inputlinkPost);
         form.appendChild(h5fecha);
         form.appendChild(inputfecha);
-        form.appendChild(divSeparar);
+        form.appendChild(inputid);
+        form.appendChild(submitForm);
         divbody.appendChild(form);
         divheader.appendChild(h3);
         div3.appendChild(divheader);
