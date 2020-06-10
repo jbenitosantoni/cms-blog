@@ -166,7 +166,7 @@ class createDOM extends Post {
     }
 
     dibujarPostHTML() {
-        let div0, div1, div2, div3, p, divheader, h3, button, span, divbody, pAutorPost, pComentario, form, formlabelCommentTitle, forminputCommentTitle, formlabelCommentContent, forminputCommentContent, formlabelCommentAuthor, forminputCommentAuthor, forminputButtom, forminputID, div4, div5, div6, div7, h5Form;
+        let div0, div1, div2, div3, p, divheader, h3, button, span, divbody, pAutorPost, pComentario, form, formlabelCommentTitle, forminputCommentTitle, formlabelCommentContent, forminputCommentContent, formlabelCommentAuthor, forminputCommentAuthor, forminputButtom, forminputID,  div4, div5, div6, div7, h5Form;
         let comentariosFormateados = "";
         let countComentarios = 0;
         let titulo = "";

@@ -1,8 +1,9 @@
 <?php
+
+use Blog\Comment;
+
 require_once '../vendor/autoload.php';
-
 session_start();
-
 if ( isset( $_SESSION['login_email'] ) ) {
     $now = time(); // Checking the time now when home page starts.
     if ($now > $_SESSION['expire']) {
@@ -38,7 +39,9 @@ if ( isset( $_SESSION['login_email'] ) ) {
             -ms-user-select: none;
             user-select: none;
         }
-
+        h5 {
+            font-size: 1.15em;
+        }
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -98,7 +101,7 @@ if ( isset( $_SESSION['login_email'] ) ) {
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <h1 class="h2" id="titleSection"><br>Dashboard</h1>
                 <div class="table-responsive">
-                    <table class="table table-striped table-sm">
+                    <table class="table table-striped table-sm"">
                         <thead>
                         <tr id="head">
                         </tr>
@@ -107,7 +110,6 @@ if ( isset( $_SESSION['login_email'] ) ) {
                         </tbody>
                     </table>
             </div>
-
             </div>
         </main>
     </div>
@@ -115,7 +117,18 @@ if ( isset( $_SESSION['login_email'] ) ) {
 <script>window.jQuery || document.write('<script src="/https://getbootstrap.com/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
 <script src="js/dashboard.js"></script>
 <?php
-include_once 'src/script.php';
+require_once 'src/script.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['idComment'])) {
+        $comment = new Comment();
+        $comment->approveComment($_POST['idComment']);
+        echo "<script>generarComments()</script>";
+    }
+    if (isset($_POST['idpost'])){
+    $posts = new Post();
+    $posts = $posts->editPost($_POST['idpost'], $_POST['inputtitulo'], $_POST['inputimagen'], $_POST['inputresumen'], $_POST['inputcontenido'], $_POST['inputautor'], $_POST['inputdestacado'] , $_POST['inputcategoria'], $_POST['inputlinkpost'] , $_POST['inputfecha']);
+    }
+}
 ?>
 </body>
 </html>
