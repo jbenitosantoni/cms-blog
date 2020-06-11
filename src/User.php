@@ -20,4 +20,9 @@ class User
         $inicializacion = $inicializacion->connect();
         return $inicializacion->query("SELECT idUser, name FROM users")->fetchAll();
     }
+    function  newUser($name, $password, $email) {
+        $inicializacion = new Database();
+        $inicializacion = $inicializacion->connect();
+        return $inicializacion->query("INSERT INTO users (name, password, email) VALUES ('$name', '$email', '$password')");
+    }
 }
