@@ -71,25 +71,7 @@ class Post {
     }
 }
 
-class Comentario {
-    idComentario;
-    idPost;
-    titulo;
-    contenido;
-    autor;
-
-    constructor(idComentario, idPost, titulo, contenido, autor) {
-        this.idComentario = idComentario;
-        this.idPost = idPost;
-        this.titulo = titulo;
-        this.contenido = contenido;
-        this.autor = autor;
-    }
-}
-
 class createDOM extends Post {
-
-
     constructor(id, titulo, imagenPequeña, resumen, contenido, autor, destacado, categoria, linkPost, fecha, comments) {
         super(id, titulo, imagenPequeña, resumen, contenido, autor, destacado, categoria, linkPost, fecha, comments);
         if (this.destacado == true) {
@@ -182,7 +164,7 @@ class createDOM extends Post {
     }
 
     dibujarPostHTML() {
-        let div0, div1, div2, div3, p, divheader, h3, button, span, divbody, pAutorPost, pComentario, form, formlabelCommentTitle, forminputCommentTitle, formlabelCommentContent, forminputCommentContent, formlabelCommentAuthor, forminputCommentAuthor, forminputButtom, forminputID, div4, div5, div6, div7, h5Form;
+        let div0, div1, div2, div3, p, divheader, h3, button, span, divbody, pAutorPost, pComentario, form, formlabelCommentTitle, forminputCommentTitle, formlabelCommentContent, forminputCommentContent, formlabelCommentAuthor, forminputCommentAuthor, forminputButtom, forminputID,  div4, div5, div6, div7, h5Form;
         let comentariosFormateados = "";
         let countComentarios = 0;
         let titulo = "";

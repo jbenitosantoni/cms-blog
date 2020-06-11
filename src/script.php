@@ -10,7 +10,7 @@ $users = $users->userPost();
 for ($i = 0; $i < count($arrayPosts); $i++) {
     array_push($arrayPosts[$i], []);
     for ($j = 0 ; $j < count($comments); $j++) {
-        if($arrayPosts[$i][0] == $comments[$j][5] && $comments[$j][4] == 1) {
+        if($arrayPosts[$i][0] == $comments[$j][5]) {
             array_push($arrayPosts[$i][11], $comments[$j]);
         }
     }

@@ -59,5 +59,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </main>
     <?php require_once 'resources/footer.php' ?>
     <?php require_once 'src/script.php' ?>
-</body>
-</html>

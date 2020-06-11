@@ -11,14 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612732de-dabf-4ec7-97c1-aa49ce1edef5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/BlogBootcamp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BlogBootcamp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/js/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/admin/js" />
       <recent name="$PROJECT_DIR$/admin/src" />
       <recent name="$PROJECT_DIR$/js" />
@@ -79,7 +79,8 @@
       <updated>1591651275923</updated>
       <workItem from="1591651277612" duration="3006000" />
       <workItem from="1591688583112" duration="13935000" />
-      <workItem from="1591707396618" duration="12149000" />
+      <workItem from="1591707396618" duration="18338000" />
+      <workItem from="1591858246767" duration="8225000" />
     </task>
     <servers />
   </component>
@@ -103,27 +104,30 @@
       <screen x="1680" y="-66" width="2560" height="1346" />
     </state>
     <state x="2640" y="165" key="#PHP/0.23.1680.1027/1680.-66.2560.1346@1680.-66.2560.1346" timestamp="1591688421071" />
-    <state x="2309" y="438" key="#SQL_Dialects" timestamp="1591688683472">
-      <screen x="1680" y="-66" width="2560" height="1346" />
+    <state x="379" y="384" key="#SQL_Dialects" timestamp="1591866647988">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
+    <state x="379" y="384" key="#SQL_Dialects/0.23.1680.965@0.23.1680.965" timestamp="1591866647988" />
     <state x="2309" y="438" key="#SQL_Dialects/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591688683472" />
-    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591651558092">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591858356793">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.963@0.23.1680.963" timestamp="1591651558092" />
-    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser" timestamp="1591713522490">
+    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.965@0.23.1680.965" timestamp="1591858356793" />
+    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser" timestamp="1591779152823">
       <screen x="1680" y="-66" width="2560" height="1346" />
     </state>
-    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591713522490" />
+    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591779152823" />
+    <state x="2773" y="351" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1417/0.23.1680.965@1680.-66.2560.1417" timestamp="1591776399740" />
     <state x="2662" y="324" key="NewPhpClassDialog" timestamp="1591715126322">
       <screen x="1680" y="-66" width="2560" height="1346" />
     </state>
     <state x="2662" y="324" key="NewPhpClassDialog/0.23.1680.1027/1680.-66.2560.1346@1680.-66.2560.1346" timestamp="1591687978222" />
     <state x="2662" y="324" key="NewPhpClassDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591715126322" />
-    <state x="2779" y="533" key="NewPhpFileDialog" timestamp="1591713558647">
+    <state x="2779" y="533" key="NewPhpFileDialog" timestamp="1591800935389">
       <screen x="1680" y="-66" width="2560" height="1346" />
     </state>
-    <state x="2779" y="533" key="NewPhpFileDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591713558647" />
+    <state x="2779" y="533" key="NewPhpFileDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591800935389" />
     <state x="2514" y="330" key="SettingsEditor" timestamp="1591707439464">
       <screen x="1680" y="-66" width="2560" height="1346" />
     </state>
@@ -144,15 +148,17 @@
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state x="555" y="317" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1680.963@0.23.1680.963" timestamp="1591656973065" />
-    <state x="2807" y="631" width="1048" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1591710661778">
-      <screen x="1680" y="-66" width="2560" height="1346" />
+    <state x="825" y="180" width="1048" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1591864040034">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state x="825" y="180" width="693" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.963@0.23.1680.963" timestamp="1591657291532" />
-    <state x="825" y="180" width="691" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.965@0.23.1680.965" timestamp="1591657751398" />
+    <state x="825" y="180" width="691" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.965@0.23.1680.965" timestamp="1591864040034" />
     <state x="2807" y="631" width="1048" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591710661778" />
-    <state x="2625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1591715648479">
-      <screen x="1680" y="-66" width="2560" height="1417" />
+    <state x="620" y="232" width="670" height="461" key="search.everywhere.popup" timestamp="1591858506477">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state x="2625" y="241" width="670" height="676" key="search.everywhere.popup/1680.-66.2560.1417/0.23.1680.965@1680.-66.2560.1417" timestamp="1591715648479" />
+    <state x="620" y="232" width="670" height="461" key="search.everywhere.popup/0.23.1680.965@0.23.1680.965" timestamp="1591858506477" />
+    <state x="2625" y="226" width="670" height="643" key="search.everywhere.popup/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591788083660" />
+    <state x="2625" y="241" width="670" height="676" key="search.everywhere.popup/1680.-66.2560.1417/0.23.1680.965@1680.-66.2560.1417" timestamp="1591775944324" />
   </component>
 </project>
