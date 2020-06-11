@@ -12,8 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="612732de-dabf-4ec7-97c1-aa49ce1edef5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/js/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
       <workItem from="1591651277612" duration="3006000" />
       <workItem from="1591688583112" duration="13935000" />
       <workItem from="1591707396618" duration="18338000" />
-      <workItem from="1591858246767" duration="10705000" />
+      <workItem from="1591858246767" duration="12988000" />
     </task>
     <servers />
   </component>
@@ -115,6 +117,22 @@
     </state>
     <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591779152823" />
     <state x="2773" y="351" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1417/0.23.1680.965@1680.-66.2560.1417" timestamp="1591776399740" />
+    <state width="1126" height="252" key="GridCell.Tab.0.bottom" timestamp="1591872635865">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state width="1126" height="252" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1591872635865" />
+    <state width="1126" height="252" key="GridCell.Tab.0.center" timestamp="1591872635864">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state width="1126" height="252" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1591872635864" />
+    <state width="1126" height="252" key="GridCell.Tab.0.left" timestamp="1591872635864">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state width="1126" height="252" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1591872635864" />
+    <state width="1126" height="252" key="GridCell.Tab.0.right" timestamp="1591872635865">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state width="1126" height="252" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1591872635865" />
     <state x="2662" y="324" key="NewPhpClassDialog" timestamp="1591715126322">
       <screen x="1680" y="-66" width="2560" height="1346" />
     </state>
@@ -133,10 +151,11 @@
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state x="722" y="391" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.1680.963@0.23.1680.963" timestamp="1591656725223" />
-    <state x="704" y="400" width="341" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591656736801">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state x="704" y="401" width="341" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591872526534">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state x="704" y="400" width="341" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.963@0.23.1680.963" timestamp="1591656736801" />
+    <state x="704" y="401" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.965@0.23.1680.965" timestamp="1591872526534" />
     <state x="405" y="167" key="com.intellij.database.dbimport.ImportDialog" timestamp="1591656975063">
       <screen x="0" y="23" width="1680" height="963" />
     </state>

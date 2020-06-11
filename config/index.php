@@ -1,4 +1,7 @@
 <?php
+use Blog\User;
+
+require_once '../vendor/autoload.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $ip = $_POST['ip'];
 $user = $_POST['user'];
@@ -7,7 +10,37 @@ $database = $_POST['database'];
 $nameAdmin = $_POST['nameAdmin'];
 $emailAdmin = $_POST['emailAdmin'];
 $passAdmin = $_POST['passAdmin'];
-$fp=fopen('../filename.php','w');
+$passAdmin = sha1($passAdmin);
+$contenidoFinal = '
+       $dbhost = DB_SERVER;
+       $dbuser = DB_USERNAME;
+       $dbpass = DB_PASSWORD;
+       $dbname = DB_DATABASE;
+       try {
+            $dbConnection = new \PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+            $dbConnection->exec("set names utf8");
+            $dbConnection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            return $dbConnection;
+        } catch (\PDOException $e) {
+            echo "Connection failed: " . $e->getMessage();
+        }
+    }
+
+}';
+
+$fp=fopen('../src/Database.php','w');
+    fwrite($fp, '<?php namespace Blog; class Database { function connect() { /* DATABASE CONFIGURATION */');
+    fclose($fp);
+    $fp2=fopen('../src/Database.php', 'a');
+    fwrite($fp2, "define('DB_SERVER', '$ip');");
+    fwrite($fp2, "define('DB_USERNAME', '$user');");
+    fwrite($fp2, "define('DB_PASSWORD', '$password');");
+    fwrite($fp2, "define('DB_DATABASE', '$database');");
+
+    fwrite($fp2, $contenidoFinal);
+    fclose($fp2);
+    $newUser = new User();
+    $newUser->newUser($nameAdmin, $emailAdmin, $passAdmin);
 }
 ?>
 
@@ -43,9 +76,10 @@ $fp=fopen('../filename.php','w');
     <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
         <div class="wrapper wrapper--w680">
             <div class="card card-1">
-                <div class="card-heading"></div>
+                <div class="card-heading"></div><br>
+                <h1>Instalador de Blog</h1>
                 <div class="card-body">
-                    <h2 class="title">Installation Info</h2>
+                    <h2 class="title">MYSQL Installation</h2>
                     <form method="POST">
                         <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="IP del Servidor MySQL" name="ip" required>

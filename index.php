@@ -1,5 +1,7 @@
 <?php
-
+if (file_exists('src/Database.php') == false) {
+    header('Location: /config/index.php');
+}
 use Blog\Comment;
 
 require_once 'vendor/autoload.php';
