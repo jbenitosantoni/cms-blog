@@ -100,6 +100,7 @@ class DomPost {
         option2 = document.createElement("option");
         option2.setAttribute("value", "0");
         option2.innerHTML = "No";
+        option2.setAttribute("selected", "selected");
         inputdestacado.appendChild(option2);
         inputcategoria = document.createElement("input");
         inputcategoria.setAttribute("type", "text");
@@ -256,6 +257,7 @@ class DomPost {
         option2 = document.createElement("option");
         option2.setAttribute("value", "2");
         option2.innerHTML = "No";
+        option2.setAttribute("selected", "selected");
         inputdestacado.appendChild(option2);
         inputcategoria = document.createElement("input");
         inputcategoria.setAttribute("type", "text");

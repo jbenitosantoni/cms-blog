@@ -153,7 +153,6 @@ window.onload = function() {
         window.location = window.location + '#loaded';
         window.location.reload();
     }
-    console.log(window.location);
     generarPosts();
     // Remove hash for next change
     window.history.pushState(\"\", document.title, window.location.pathname);
@@ -170,7 +169,6 @@ window.onload = function() {
         window.location = window.location + '#loaded';
         window.location.reload();
     }
-    console.log(window.location);
     generarPosts();
     // Remove hash for next change
     window.history.pushState(\"\", document.title, window.location.pathname);

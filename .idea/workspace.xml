@@ -11,13 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612732de-dabf-4ec7-97c1-aa49ce1edef5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BlogBootcamp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BlogBootcamp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/js/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/admin/js" />
       <recent name="$PROJECT_DIR$/admin/src" />
       <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -80,7 +76,7 @@
       <workItem from="1591651277612" duration="3006000" />
       <workItem from="1591688583112" duration="13935000" />
       <workItem from="1591707396618" duration="18338000" />
-      <workItem from="1591858246767" duration="8225000" />
+      <workItem from="1591858246767" duration="10705000" />
     </task>
     <servers />
   </component>
@@ -124,9 +120,10 @@
     </state>
     <state x="2662" y="324" key="NewPhpClassDialog/0.23.1680.1027/1680.-66.2560.1346@1680.-66.2560.1346" timestamp="1591687978222" />
     <state x="2662" y="324" key="NewPhpClassDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591715126322" />
-    <state x="2779" y="533" key="NewPhpFileDialog" timestamp="1591800935389">
-      <screen x="1680" y="-66" width="2560" height="1346" />
+    <state x="721" y="452" key="NewPhpFileDialog" timestamp="1591869626700">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
+    <state x="721" y="452" key="NewPhpFileDialog/0.23.1680.965@0.23.1680.965" timestamp="1591869626700" />
     <state x="2779" y="533" key="NewPhpFileDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591800935389" />
     <state x="2514" y="330" key="SettingsEditor" timestamp="1591707439464">
       <screen x="1680" y="-66" width="2560" height="1346" />
