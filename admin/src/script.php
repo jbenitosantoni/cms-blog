@@ -1,7 +1,4 @@
 <?php
-use Blog\Comment;
-use Blog\Post;
-
 session_start();
 if ( isset( $_SESSION['login_email'] ) ) {
     $now = time(); // Checking the time now when home page starts.
@@ -13,6 +10,9 @@ if ( isset( $_SESSION['login_email'] ) ) {
     // Redirect them to the login page
     header("Location: ../login.php");
 }
+
+use Blog\Comment;
+use Blog\Post;
 $posts = new Post();
 $posts = $posts->getPosts();
 $comments = new Comment();
@@ -44,13 +44,18 @@ $posts = json_encode($posts);
         let dom = new DomPost();
         $delete.domDelete();
         dom.domPostsHead();
+        dom.domNewPost();
         for (let i = 0; i < postsDB.length; i++) {
             dom.domPosts(postsDB[i].id, postsDB[i].titulo, postsDB[i].imagenPequeña, postsDB[i].resumen, postsDB[i].contenido, postsDB[i].autor, postsDB[i].destacado, postsDB[i].categoria, postsDB[i].linkPost, postsDB[i].fecha, postsDB[i].idUsuarioCreador);
         }
     }
     function generarUsers() {
-        $dom = new DomUsers();
+        let dom = new DomUsers();
         $delete.domDelete();
-        $dom.domUsersHead();
+        dom.domUsersHead();
+    }
+    function newPostModal() {
+        let dom = new Post();
+
     }
 </script>

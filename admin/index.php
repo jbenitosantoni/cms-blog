@@ -43,6 +43,9 @@ if ( isset( $_SESSION['login_email'] ) ) {
         h5 {
             font-size: 1.15em;
         }
+        #botonNuevoPost {
+            margin-right: 5%;
+        }
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -129,23 +132,53 @@ window.onload = function() {
         window.location = window.location + '#loaded';
         window.location.reload();
     }
+    generarComments();
+    window.history.pushState(\"\", document.title, window.location.pathname);
 }
-generarComments();
+
 </script>";
     }
-    if (isset($_POST['idpost'])){
+    if (isset($_POST['comprobarNewPost'])){
+        if ($_POST['inputeliminar'] == 0) {
     $posts = new Post();
     $posts = $posts->editPost($_POST['idpost'], $_POST['inputtitulo'], $_POST['inputimagen'], $_POST['inputresumen'], $_POST['inputcontenido'], $_POST['inputautor'], $_POST['inputdestacado'] , $_POST['inputcategoria'], $_POST['inputlinkpost'] , $_POST['inputfecha']);
-        echo "<script>
+        } else if ($_POST['inputeliminar'] == 1){
+            $posts = new Post();
+            $posts = $posts->deletePost($_POST['idpost']);
+        }
+    echo "<script>
+// Reload despues de query
 window.onload = function() {
     if(!window.location.hash) {
         window.location = window.location + '#loaded';
         window.location.reload();
     }
+    console.log(window.location);
+    generarPosts();
+    // Remove hash for next change
+    window.history.pushState(\"\", document.title, window.location.pathname);
 }
-generarPosts()</script>";
+</script>";
+    }
+    if (isset($_POST['crearPost'])){
+        $posts = new Post();
+        $posts = $posts->newPost($_POST['inputtitulo'], $_POST['inputimagen'], $_POST['inputresumen'], $_POST['inputcontenido'], $_POST['inputautor'], $_POST['inputdestacado'] , $_POST['inputcategoria'], $_POST['inputlinkpost'] , $_POST['inputfecha']);
+        echo "<script>
+// Reload despues de query
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+    console.log(window.location);
+    generarPosts();
+    // Remove hash for next change
+    window.history.pushState(\"\", document.title, window.location.pathname);
+}
+</script>";
     }
 }
 ?>
+
 </body>
 </html>

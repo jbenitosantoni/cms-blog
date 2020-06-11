@@ -72,8 +72,6 @@ class Post {
 }
 
 class createDOM extends Post {
-
-
     constructor(id, titulo, imagenPequeña, resumen, contenido, autor, destacado, categoria, linkPost, fecha, comments) {
         super(id, titulo, imagenPequeña, resumen, contenido, autor, destacado, categoria, linkPost, fecha, comments);
         if (this.destacado == true) {
