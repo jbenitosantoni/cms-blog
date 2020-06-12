@@ -256,7 +256,7 @@ class DomPost {
         option1.innerHTML = "Si";
         inputdestacado.appendChild(option1);
         option2 = document.createElement("option");
-        option2.setAttribute("value", "2");
+        option2.setAttribute("value", "0");
         option2.innerHTML = "No";
         option2.setAttribute("selected", "selected");
         inputdestacado.appendChild(option2);
