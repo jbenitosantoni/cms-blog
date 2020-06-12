@@ -16,6 +16,11 @@ class Comment
         $inicializacion = $inicializacion->connect();
         return $inicializacion->query("SELECT * FROM comments")->fetchAll();
     }
+    function getCommentsID($id) {
+        $inicializacion = new Database();
+        $inicializacion = $inicializacion->connect();
+        return $inicializacion->query("SELECT * FROM comments WHERE idPost='$id' AND approved='1'")->fetchAll();
+    }
     function newComment($title, $author, $content, $idPost) {
         $inicializacion = new Database();
         $inicializacion = $inicializacion->connect();

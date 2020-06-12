@@ -25,4 +25,9 @@ class Post
         $inicializacion = $inicializacion->connect();
         return $inicializacion->query("DELETE from posts WHERE id='$id'");
     }
+    function getPost($id) {
+        $inicializacion = new Database();
+        $inicializacion = $inicializacion->connect();
+        return $inicializacion->query("SELECT * from posts WHERE id='$id'")->fetchAll();
+    }
 }

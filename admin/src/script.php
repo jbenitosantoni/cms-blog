@@ -13,10 +13,15 @@ if ( isset( $_SESSION['login_email'] ) ) {
 
 use Blog\Comment;
 use Blog\Post;
+use Blog\User;
+
 $posts = new Post();
 $posts = $posts->getPosts();
 $comments = new Comment();
 $comments = $comments->getAllComments();
+$users = new User();
+$todosUsers = new User();
+$todosUsers = $todosUsers->allUsers();
 for ($i = 0; $i < count($comments); $i++){
     for ($j = 0; $j < count($posts); $j++) {
         if ($posts[$j][0] == $comments[$i][5]) {
@@ -26,6 +31,7 @@ for ($i = 0; $i < count($comments); $i++){
 }
 $comments = json_encode($comments);
 $posts = json_encode($posts);
+$todosUsers = json_encode($todosUsers);
 ?>
 <script type="text/javascript">
     $delete = new AdminFunctions();
@@ -50,12 +56,16 @@ $posts = json_encode($posts);
         }
     }
     function generarUsers() {
+        let users = <?php
+            echo $todosUsers;?>;
         let dom = new DomUsers();
         $delete.domDelete();
         dom.domUsersHead();
+        for (let i = 0; i < users.length; i++) {
+            dom.domUsersDraw(users[i][0], users[i].name, users[i].email, users[i].permisos);
+        }
     }
     function newPostModal() {
         let dom = new Post();
-
     }
 </script>

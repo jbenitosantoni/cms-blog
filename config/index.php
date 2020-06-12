@@ -1,4 +1,5 @@
 <?php
+
 use Blog\User;
 
 require_once '../vendor/autoload.php';
@@ -10,6 +11,7 @@ $database = $_POST['database'];
 $nameAdmin = $_POST['nameAdmin'];
 $emailAdmin = $_POST['emailAdmin'];
 $passAdmin = $_POST['passAdmin'];
+$hashHT = base64_encode(sha1($passAdmin, true));
 $passAdmin = sha1($passAdmin);
 $contenidoFinal = '
        $dbhost = DB_SERVER;
@@ -39,8 +41,26 @@ $fp=fopen('../src/Database.php','w');
 
     fwrite($fp2, $contenidoFinal);
     fclose($fp2);
+
+    $fp3=fopen('.htpasswd','w');
+    fwrite($fp3, $emailAdmin . ':' . '{SHA}'.$hashHT);
+    fclose($fp3);
+    $fp4=fopen('.htaccess', 'w');
+    fwrite($fp4, 'AuthUserFile .htpasswd
+AuthType Basic
+Require valid-user
+<Files "config/index.php">
+  Require valid-user
+</Files>
+');
+    fclose($fp4);
+    try {
     $newUser = new User();
     $newUser->newUser($nameAdmin, $emailAdmin, $passAdmin);
+    echo "<script>alert('Recuerda borrar la carpeta config una vez terminada la instalación')</script>";
+    } catch (Error $e) {
+        echo "<script>alert('Has introducido los datos incorrectos de MYSQL')</script>";
+    }
 }
 ?>
 

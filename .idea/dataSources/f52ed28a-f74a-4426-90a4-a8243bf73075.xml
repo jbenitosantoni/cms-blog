@@ -1058,17 +1058,23 @@
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="318" parent="287" name="idusers_UNIQUE">
+    <column id="318" parent="287" name="permisos">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="319" parent="287" name="idusers_UNIQUE">
       <ColNames>idUser</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="319" parent="287" name="PRIMARY">
+    <key id="320" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idUser</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="320" parent="287" name="idusers_UNIQUE">
+    <key id="321" parent="287" name="idusers_UNIQUE">
       <ColNames>idUser</ColNames>
       <UnderlyingIndexName>idusers_UNIQUE</UnderlyingIndexName>
     </key>

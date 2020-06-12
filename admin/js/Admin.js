@@ -47,7 +47,8 @@ class DomPost {
         buttonNewPost = document.createElement("button");
         buttonNewPost.setAttribute("data-toggle", "modal");
         buttonNewPost.setAttribute("data-target", ".modalCreateNewPost");
-        buttonNewPost.setAttribute("class", "btn btn-sm btn-outline-secondary");
+        buttonNewPost.setAttribute("class", "btn btn-primary float-right")
+        buttonNewPost.setAttribute("id", "buttonPostNew");
         buttonNewPost.innerHTML = "Nuevo Post";
         div0 = document.createElement("container");
         div1 = document.createElement("div");
@@ -440,7 +441,7 @@ class DomComment {
 
 class DomUsers {
     domUsersHead() {
-        let titleSection, tr, thID, thName, themail;
+        let titleSection, tr, thID, thName, themail, thPermisos, thEditar;
         titleSection = document.getElementById("titleSection");
         titleSection.innerHTML = "<br>Usuarios";
         tr = document.getElementById("head");
@@ -450,8 +451,135 @@ class DomUsers {
         thName.innerHTML = "Nombre";
         themail = document.createElement("th");
         themail.innerHTML = "Email";
+        thPermisos = document.createElement("th");
+        thPermisos.innerHTML = "Permisos";
+        thEditar = document.createElement("th");
+        thEditar.innerHTML = "Editar";
         tr.appendChild(thID);
         tr.appendChild(thName);
         tr.appendChild(themail);
+        tr.appendChild(thPermisos);
+        tr.appendChild(thEditar);
+    }
+    domUsersDraw(id, name, email, permisos) {
+        if (permisos == 0) {
+            permisos = "No";
+        } else if (permisos == 1) {
+            permisos = "Si";
+        }
+        let tBody, tr, tdID, tdName, tdEmail, tdPermisos, button, div0, div1, div2, div3, divbody, divheader, h3;
+        tBody = document.getElementById('tBody');
+        tr = document.createElement("tr");
+        tdID = document.createElement("td");
+        tdID.innerHTML = id;
+        tdName = document.createElement("td");
+        tdName.innerHTML = name;
+        tdEmail = document.createElement("td");
+        tdEmail.innerHTML = email;
+        tdPermisos = document.createElement("td");
+        tdPermisos.innerHTML = permisos;
+        button = document.createElement("button");
+        button.setAttribute("data-toggle", "modal");
+        button.setAttribute("data-target", ".modalUser" + id);
+        button.setAttribute("class", "btn btn-sm btn-outline-secondary");
+        button.innerHTML = "Editar";
+        tr.appendChild(tdID);
+        tr.appendChild(tdName);
+        tr.appendChild(tdEmail);
+        tr.appendChild(tdPermisos);
+        tr.appendChild(button);
+        tBody.appendChild(tr);
+        let form, h5Name, h5Email, h5Permisos, h5Password, inputName, inputEmail, inputPermisos, option1Permisos, option2Permisos, inputPassword, inputIDHidden, buttonBorrar, form2, inputHiddenBorrar;
+        divbody = document.createElement("div");
+        divbody.setAttribute("class", "modal-body");
+        divheader = document.createElement("div");
+        divheader.setAttribute("class", "modal-header");
+        h3 = document.createElement("h3");
+        h3.setAttribute("class", "modal-title");
+        h3.innerHTML = "Editar User: " + id;
+        div0 = document.createElement("container");
+        div1 = document.createElement("div");
+        div1.setAttribute("class", "modal fade modalUser" + id);
+        div1.setAttribute("tabindex", "-1");
+        div1.setAttribute("role", "dialog");
+        div1.setAttribute("aria-labelledby", "myLargeModalLabel");
+        div1.setAttribute("aria-hidden", "true");
+        div1.setAttribute("id", "myModal");
+        div2 = document.createElement("div");
+        div2.setAttribute("class", "modal-dialog modal-lg");
+        div3 = document.createElement("div");
+        div3.setAttribute("class", "modal-content");
+        form = document.createElement("form");
+        h5Name = document.createElement("h5");
+        h5Name.innerHTML = "Nombre";
+        h5Email = document.createElement("h5");
+        h5Email.innerHTML = "Email";
+        h5Permisos = document.createElement("h5");
+        h5Permisos.innerHTML = "Permisos";
+        h5Password = document.createElement("h5");
+        h5Password.innerHTML = "Contraseña Nueva";
+        inputName = document.createElement("input");
+        inputName.setAttribute("name", "name");
+        inputName.setAttribute("type", "text");
+        inputName.setAttribute("value", name);
+        inputEmail = document.createElement("input");
+        inputEmail.setAttribute("name", "email");
+        inputEmail.setAttribute("type", "email");
+        inputEmail.setAttribute("value", email);
+        inputPermisos = document.createElement("select");
+        inputPermisos.setAttribute("name", "permisos");
+        inputPermisos.setAttribute("value", email);
+        option1Permisos = document.createElement("option");
+        option1Permisos.setAttribute("value", "1");
+        option1Permisos.innerHTML = "Si";
+        inputPermisos.appendChild(option1Permisos);
+        option2Permisos = document.createElement("option");
+        option2Permisos.setAttribute("value", "0");
+        option2Permisos.setAttribute("selected", "selected");
+        option2Permisos.innerHTML = "No";
+        inputPermisos.appendChild(option2Permisos);
+        inputPassword = document.createElement("input");
+        inputPassword.setAttribute("name", "password");
+        inputPassword.setAttribute("type", "password");
+        inputIDHidden = document.createElement("input");
+        inputIDHidden.setAttribute("type", "hidden");
+        inputIDHidden.setAttribute("value", id);
+        inputIDHidden.setAttribute("name", "id");
+        button = document.createElement("input");
+        button.setAttribute("type", "submit");
+        button.setAttribute("value", "Editar");
+        form.setAttribute("method", "post");
+        form.setAttribute("action", "");
+        form.appendChild(h5Name);
+        form.appendChild(inputName);
+        form.appendChild(h5Email);
+        form.appendChild(inputEmail);
+        form.appendChild(h5Permisos);
+        form.appendChild(inputPermisos);
+        form.appendChild(h5Password);
+        form.appendChild(inputPassword);
+        form.appendChild(inputIDHidden);
+        form.appendChild(button);
+        divbody.appendChild(form);
+        form2 = document.createElement("form");
+        form2.setAttribute("method", "post");
+        buttonBorrar = document.createElement("input");
+        buttonBorrar.setAttribute("type", "submit");
+        buttonBorrar.setAttribute("value", "Borrar Usuario");
+        inputHiddenBorrar = document.createElement("input");
+        inputHiddenBorrar.setAttribute("type", "hidden");
+        inputHiddenBorrar.setAttribute("value", id);
+        inputHiddenBorrar.setAttribute("name", "idBorrado");
+        form2.appendChild(buttonBorrar);
+        form2.appendChild(inputHiddenBorrar);
+        divbody.appendChild(form2);
+        divheader.appendChild(h3);
+        div3.appendChild(divheader);
+        div3.appendChild(divbody);
+        div2.appendChild(div3);
+        div1.appendChild(div2);
+        div0.appendChild(div1);
+        tBody.appendChild(div0);
+
     }
 }

@@ -8,4 +8,14 @@ services:
       - "8080:80"
     volumes:
       - .:/var/www/html
-
+  basedatos:
+    image: mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - ./MYSQL/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: upgrade
+      MYSQL_USER: javier
+      MYSQL_PASSWORD: 123
