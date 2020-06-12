@@ -19,7 +19,7 @@ $image = new Image("../assets", "img", 600);
 if ($_FILES) {
     try {
         $upload = $image->upload($_FILES['image'], $_FILES['image']['tmp_name']);
-        echo "<a href='{$upload}'>Link a la Imagen</a>";
+        echo "<script>window.open('{$upload}', '_blank');</script>";
     } catch (Exception $e) {
         echo "<p>(!) {$e->getMessage()}</p>";
     }
