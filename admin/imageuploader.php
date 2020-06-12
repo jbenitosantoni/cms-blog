@@ -16,10 +16,9 @@ if ( isset( $_SESSION['login_email'] ) ) {
 }
 $image = new Image("../assets", "img", 600);
 
-if (isset($_POST['name'])){
-    echo "<script>alert('Hey')</script>";
+if ($_FILES) {
     try {
-        $upload = $image->upload($_FILES['image'], $_POST['name']);
+        $upload = $image->upload($_FILES['image'], $_FILES['image']['tmp_name']);
         echo "<a href='{$upload}'>Link a la Imagen</a>";
     } catch (Exception $e) {
         echo "<p>(!) {$e->getMessage()}</p>";
@@ -141,22 +140,23 @@ if (isset($_POST['name'])){
 
     <div class="row py-4">
         <div class="col-lg-6 mx-auto">
-            <form method="post">
+            <form method="post" action="" enctype="multipart/form-data">
             <!-- Upload image input-->
             <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <form method="post" action="" enctype="multipart/form-data">
                 <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" name="image">
                 <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
                 <div class="input-group-append">
                     <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
                 </div>
-            </div>
 
+            </div>
+                <input type="submit" value="Upload Image">
+            </form>
             <!-- Uploaded image area-->
             <p class="font-italic text-white text-center">The image uploaded will be rendered inside the box below.</p>
             <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
-            <input type="text" name="name" placeholder="Image Name">
-            <input type="submit" value="Upload Image">
-        </form>
+
         </div>
     </div>
 </div>
