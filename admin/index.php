@@ -2,6 +2,7 @@
 
 use Blog\Comment;
 use Blog\Post;
+use Blog\User;
 
 require_once '../vendor/autoload.php';
 session_start();
@@ -43,7 +44,7 @@ if ( isset( $_SESSION['login_email'] ) ) {
         h5 {
             font-size: 1.15em;
         }
-        #botonNuevoPost {
+        #buttonPostNew {
             margin-right: 5%;
         }
         @media (min-width: 768px) {
@@ -81,21 +82,27 @@ if ( isset( $_SESSION['login_email'] ) ) {
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="generarPosts()">
+                        <a class="nav-link" onclick="generarPosts()">
                             <span data-feather="layers"></span>
                             Posts
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="generarComments()">
+                        <a class="nav-link" onclick="generarComments()">
                             <span data-feather="file-text"></span>
                             Comments
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="generarUsers()">
+                        <a class="nav-link" onclick="generarUsers()">
                             <span data-feather="users"></span>
                             Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imageuploader.php">
+                            <span data-feather="image"></span>
+                            Image Uploader
                         </a>
                     </li>
                 </ul>
@@ -170,6 +177,38 @@ window.onload = function() {
         window.location.reload();
     }
     generarPosts();
+    // Remove hash for next change
+    window.history.pushState(\"\", document.title, window.location.pathname);
+}
+</script>";
+    }
+    if (isset($_POST['password'])){
+        $user = new User();
+        $user->editUser($_POST['id'], $_POST['name'], $_POST['email'], $_POST['permisos'], sha1($_POST['password']));
+        echo "<script>
+// Reload despues de query
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+    generarUsers();
+    // Remove hash for next change
+    window.history.pushState(\"\", document.title, window.location.pathname);
+}
+</script>";
+    }
+    if (isset($_POST['idBorrado'])){
+        $user = new User();
+        $user->deleteUser($_POST['idBorrado']);
+        echo "<script>
+// Reload despues de query
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+    generarUsers();
     // Remove hash for next change
     window.history.pushState(\"\", document.title, window.location.pathname);
 }

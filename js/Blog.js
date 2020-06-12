@@ -108,8 +108,8 @@ class createDOM extends Post {
         p.setAttribute("class", "card-text mb-auto");
         p.innerHTML = this.resumen;
         a2 = document.createElement("a");
-        a2.setAttribute("href", this.linkPost);
-        a2.innerHTML = "Continue reading";
+        a2.setAttribute("href", "post.php?id=" + this.id);
+        a2.innerHTML = "Continuar leyendo";
         img = document.createElement("img");
         img.setAttribute("class", "card-img-right flex-auto d-none d-md-block");
         img.setAttribute("src", "assets/img/200x250.jpg");
@@ -164,7 +164,7 @@ class createDOM extends Post {
     }
 
     dibujarPostHTML() {
-        let div0, div1, div2, div3, p, divheader, h3, button, span, divbody, pAutorPost, pComentario, form, formlabelCommentTitle, forminputCommentTitle, formlabelCommentContent, forminputCommentContent, formlabelCommentAuthor, forminputCommentAuthor, forminputButtom, forminputID,  div4, div5, div6, div7, h5Form;
+        let div0, div1, div2, div3,aButtonVerMAs, buttonVerMas, p, divheader, h3, button, span, divbody, pAutorPost, pComentario, form, formlabelCommentTitle, forminputCommentTitle, formlabelCommentContent, forminputCommentContent, formlabelCommentAuthor, forminputCommentAuthor, forminputButtom, forminputID,  div4, div5, div6, div7, h5Form;
         let comentariosFormateados = "";
         let countComentarios = 0;
         let titulo = "";
@@ -203,6 +203,11 @@ class createDOM extends Post {
         h3 = document.createElement("h3");
         h3.setAttribute("class", "modal-title");
         h3.innerHTML = this.titulo;
+        buttonVerMas = document.createElement("button");
+        buttonVerMas.innerHTML = "Ver Mas";
+        aButtonVerMAs = document.createElement("a");
+        aButtonVerMAs.setAttribute("href", "post.php?id=" + this.id);
+        aButtonVerMAs.appendChild(buttonVerMas);
         button = document.createElement("button");
         button.setAttribute("type", "button");
         button.setAttribute("class", "close");
@@ -262,13 +267,13 @@ class createDOM extends Post {
         forminputButtom.setAttribute("vale", "Post");
         div7.appendChild(forminputButtom);
 
-
         button.appendChild(span);
         divheader.appendChild(h3);
         divheader.appendChild(button);
         div3.appendChild(divheader);
         divbody.appendChild(p);
         divbody.appendChild(pAutorPost);
+        divbody.appendChild(aButtonVerMAs);
         divbody.appendChild(pComentario);
         divbody.appendChild(h5Form);
         form.appendChild(div4);

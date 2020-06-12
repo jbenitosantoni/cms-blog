@@ -1,4 +1,4 @@
-<?php namespace Blog; class Database { function connect() { /* DATABASE CONFIGURATION */define('DB_SERVER', '172.18.0.1');define('DB_USERNAME', 'root');define('DB_PASSWORD', 'admin');define('DB_DATABASE', 'upgrade');
+<?php namespace Blog; class Database { function connect() { /* DATABASE CONFIGURATION */define('DB_SERVER', 'basedatos');define('DB_USERNAME', 'root');define('DB_PASSWORD', 'admin');define('DB_DATABASE', 'upgrade');
        $dbhost = DB_SERVER;
        $dbuser = DB_USERNAME;
        $dbpass = DB_PASSWORD;
