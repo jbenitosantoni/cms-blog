@@ -1,5 +1,6 @@
 <?php
 
+use Blog\Database;
 use Blog\User;
 
 require_once '../vendor/autoload.php';
@@ -54,6 +55,55 @@ Require valid-user
 </Files>
 ');
     fclose($fp4);
+    $inicializacion = new Database();
+    $inicializacion = $inicializacion->connect();
+    $inicializacion->query("
+create table users (
+    idUser   int auto_increment,
+    name     varchar(40) not null,
+    password varchar(45) null,
+    email    varchar(45) null,
+    permisos tinyint(1)  not null,
+    constraint idusers_UNIQUE
+        unique (idUser)
+);");
+    $inicializacion->query("alter table users
+    add primary key (idUser);");
+    $inicializacion->query("create table posts
+(
+    id               int auto_increment,
+    titulo           varchar(45)  null,
+    imagenPequeña    varchar(150)  null,
+    resumen          varchar(150) null,
+    contenido        text         null,
+    autor            varchar(40)  null,
+    destacado        tinyint      null,
+    categoria        varchar(45)  null,
+    linkPost         varchar(45)  null,
+    fecha            varchar(45)  null,
+    idUsuarioCreador int          null,
+    constraint id_UNIQUE
+        unique (id),
+    constraint idUsuarioCreador
+        foreign key (idUsuarioCreador) references users (idUser)
+);");
+    $inicializacion->query("alter table posts
+    add primary key (id);");
+    $inicializacion->query("create table comments
+(
+    idComment int auto_increment,
+    title     varchar(45) null,
+    author    varchar(45) not null,
+    content   text        not null,
+    approved  tinyint(1)  not null,
+    idPost    int         not null,
+    constraint comments_idComment_uindex
+        unique (idComment),
+    constraint id
+        foreign key (idPost) references posts (id)
+);");
+    $inicializacion->query("create index id_idx
+    on comments (idPost);");
     try {
     $newUser = new User();
     $newUser->newUser($nameAdmin, $emailAdmin, $passAdmin);

@@ -1,0 +1,6 @@
+AuthUserFile .htpasswd
+AuthType Basic
+Require valid-user
+<Files "config/index.php">
+  Require valid-user
+</Files>

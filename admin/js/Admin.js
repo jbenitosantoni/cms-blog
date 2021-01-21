@@ -110,7 +110,7 @@ class DomPost {
         inputlinkPost.setAttribute("type", "text");
         inputlinkPost.setAttribute("name", "inputlinkpost");
         inputfecha = document.createElement("input");
-        inputfecha.setAttribute("type", "text");
+        inputfecha.setAttribute("type", "date");
         inputfecha.setAttribute("name", "inputfecha");
         h5titulo = document.createElement("h5");
         h5imagen = document.createElement("h5");

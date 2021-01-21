@@ -11,8 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612732de-dabf-4ec7-97c1-aa49ce1edef5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/2020/06/tmp-phpm3b6ed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/js/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/js/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +42,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="MAMP-server">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -53,11 +64,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sqlGeneratorConfig" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config" />
@@ -66,6 +81,7 @@
       <recent name="$PROJECT_DIR$/admin/src" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -86,11 +102,12 @@
       <workItem from="1591889176162" duration="2000" />
       <workItem from="1591905388420" duration="2003000" />
       <workItem from="1591947719880" duration="7570000" />
+      <workItem from="1610613515503" duration="4702000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -105,88 +122,49 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2640" y="165" key="#PHP" timestamp="1591688421071">
-      <screen x="1680" y="-66" width="2560" height="1346" />
+    <state x="312" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610619406195">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="2640" y="165" key="#PHP/0.23.1680.1027/1680.-66.2560.1346@1680.-66.2560.1346" timestamp="1591688421071" />
-    <state x="379" y="384" key="#SQL_Dialects" timestamp="1591866647988">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="312" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.951@0.25.1680.951" timestamp="1610619406195" />
+    <state x="578" y="259" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610620850548">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="379" y="384" key="#SQL_Dialects/0.23.1680.965@0.23.1680.965" timestamp="1591866647988" />
-    <state x="2309" y="438" key="#SQL_Dialects/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591688683472" />
-    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591858356793">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="578" y="259" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1680.951@0.25.1680.951" timestamp="1610620850548" />
+    <state width="1126" height="247" key="GridCell.Tab.0.bottom" timestamp="1610620786015">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.963@0.23.1680.963" timestamp="1591651558092" />
-    <state x="417" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.965@0.23.1680.965" timestamp="1591858356793" />
-    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser" timestamp="1591779152823">
-      <screen x="1680" y="-66" width="2560" height="1346" />
+    <state width="1126" height="247" key="GridCell.Tab.0.bottom/0.25.1680.951@0.25.1680.951" timestamp="1610620786015" />
+    <state width="1126" height="247" key="GridCell.Tab.0.center" timestamp="1610620786014">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="2773" y="330" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591779152823" />
-    <state x="2773" y="351" key="#com.intellij.ide.util.MemberChooser/1680.-66.2560.1417/0.23.1680.965@1680.-66.2560.1417" timestamp="1591776399740" />
-    <state width="1126" height="254" key="GridCell.Tab.0.bottom" timestamp="1591947782574">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="1126" height="247" key="GridCell.Tab.0.center/0.25.1680.951@0.25.1680.951" timestamp="1610620786014" />
+    <state width="1126" height="247" key="GridCell.Tab.0.left" timestamp="1610620786014">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state width="1126" height="254" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1591947782574" />
-    <state width="1126" height="254" key="GridCell.Tab.0.center" timestamp="1591947782573">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="1126" height="247" key="GridCell.Tab.0.left/0.25.1680.951@0.25.1680.951" timestamp="1610620786014" />
+    <state width="1126" height="247" key="GridCell.Tab.0.right" timestamp="1610620786015">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state width="1126" height="254" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1591947782573" />
-    <state width="1126" height="254" key="GridCell.Tab.0.left" timestamp="1591947782572">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="1126" height="247" key="GridCell.Tab.0.right/0.25.1680.951@0.25.1680.951" timestamp="1610620786015" />
+    <state width="228" height="539" key="HiddenNamespacesPopup" timestamp="1610620317318">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state width="1126" height="254" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1591947782572" />
-    <state width="1126" height="254" key="GridCell.Tab.0.right" timestamp="1591947782573">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="228" height="539" key="HiddenNamespacesPopup/0.25.1680.951@0.25.1680.951" timestamp="1610620317318" />
+    <state x="745" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610621716297">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state width="1126" height="254" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1591947782573" />
-    <state x="2662" y="324" key="NewPhpClassDialog" timestamp="1591715126322">
-      <screen x="1680" y="-66" width="2560" height="1346" />
+    <state x="745" y="383" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.25.1680.951@0.25.1680.951" timestamp="1610621716297" />
+    <state x="746" y="392" width="337" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610621711332">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="2662" y="324" key="NewPhpClassDialog/0.23.1680.1027/1680.-66.2560.1346@1680.-66.2560.1346" timestamp="1591687978222" />
-    <state x="2662" y="324" key="NewPhpClassDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591715126322" />
-    <state x="721" y="452" key="NewPhpFileDialog" timestamp="1591952913543">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="746" y="392" width="337" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.25.1680.951@0.25.1680.951" timestamp="1610621711332" />
+    <state x="483" y="251" width="865" height="711" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610620527037">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="721" y="452" key="NewPhpFileDialog/0.23.1680.965@0.23.1680.965" timestamp="1591952913543" />
-    <state x="2779" y="533" key="NewPhpFileDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591800935389" />
-    <state x="2514" y="330" key="SettingsEditor" timestamp="1591707439464">
-      <screen x="1680" y="-66" width="2560" height="1346" />
+    <state x="483" y="251" width="865" height="711" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1680.951@0.25.1680.951" timestamp="1610620527037" />
+    <state x="542" y="239" width="595" height="550" key="find.popup" timestamp="1610620724950">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="2514" y="330" key="SettingsEditor/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591707439464" />
-    <state x="722" y="391" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1591656725223">
-      <screen x="0" y="23" width="1680" height="963" />
-    </state>
-    <state x="722" y="391" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.1680.963@0.23.1680.963" timestamp="1591656725223" />
-    <state x="704" y="401" width="341" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591872526534">
-      <screen x="0" y="23" width="1680" height="965" />
-    </state>
-    <state x="704" y="400" width="341" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.963@0.23.1680.963" timestamp="1591656736801" />
-    <state x="704" y="401" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.965@0.23.1680.965" timestamp="1591872526534" />
-    <state x="405" y="167" key="com.intellij.database.dbimport.ImportDialog" timestamp="1591656975063">
-      <screen x="0" y="23" width="1680" height="963" />
-    </state>
-    <state x="405" y="167" key="com.intellij.database.dbimport.ImportDialog/0.23.1680.963@0.23.1680.963" timestamp="1591656975063" />
-    <state x="555" y="317" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1591656973065">
-      <screen x="0" y="23" width="1680" height="963" />
-    </state>
-    <state x="555" y="317" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1680.963@0.23.1680.963" timestamp="1591656973065" />
-    <state x="825" y="180" width="1048" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1591873554816">
-      <screen x="0" y="23" width="1680" height="965" />
-    </state>
-    <state x="825" y="180" width="693" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.963@0.23.1680.963" timestamp="1591657291532" />
-    <state x="825" y="180" width="691" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1680.965@0.23.1680.965" timestamp="1591873554816" />
-    <state x="2807" y="631" width="1048" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591710661778" />
-    <state x="626" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591874828720">
-      <screen x="0" y="23" width="1680" height="965" />
-    </state>
-    <state x="626" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.965@0.23.1680.965" timestamp="1591874828720" />
-    <state x="620" y="232" width="670" height="461" key="search.everywhere.popup" timestamp="1591955305048">
-      <screen x="0" y="23" width="1680" height="965" />
-    </state>
-    <state x="620" y="232" width="670" height="461" key="search.everywhere.popup/0.23.1680.965@0.23.1680.965" timestamp="1591955305048" />
-    <state x="2625" y="226" width="670" height="643" key="search.everywhere.popup/1680.-66.2560.1346/0.23.1680.1027@1680.-66.2560.1346" timestamp="1591788083660" />
-    <state x="2625" y="227" width="1021" height="646" key="search.everywhere.popup/1680.-66.2560.1351/0.23.1680.1027@1680.-66.2560.1351" timestamp="1591885055101" />
-    <state x="2625" y="241" width="670" height="676" key="search.everywhere.popup/1680.-66.2560.1417/0.23.1680.965@1680.-66.2560.1417" timestamp="1591775944324" />
+    <state x="542" y="239" width="595" height="550" key="find.popup/0.25.1680.951@0.25.1680.951" timestamp="1610620724950" />
   </component>
 </project>
